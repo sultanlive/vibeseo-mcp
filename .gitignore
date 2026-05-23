@@ -1,0 +1,13 @@
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node (if examples/ grows scripts later)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json

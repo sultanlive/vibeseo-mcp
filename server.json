@@ -3,8 +3,8 @@
   "name": "dev.vibeseo/vibeseo",
   "title": "VibeSEO",
   "description": "SEO research, audits, backlinks, GSC, and content workflow tools for AI agents.",
-  "websiteUrl": "https://vibeseo.dev",
-  "version": "0.1.0",
+  "websiteUrl": "https://vibeseo.dev/mcp",
+  "version": "0.1.1",
   "repository": {
     "url": "https://github.com/sultanlive/vibeseo-mcp",
     "source": "github"

@@ -1,6 +1,6 @@
 # Setup — per-client install paths
 
-The hosted setup page at [vibeseo.dev/agent](https://vibeseo.dev/agent) has one-click links, copied commands, and live OAuth status. This page mirrors those instructions for reference.
+The hosted page at [vibeseo.dev/mcp](https://vibeseo.dev/mcp) is the canonical setup entry point — overview, one-click links, copied commands, and live OAuth status all live there. This document mirrors those instructions for reference.
 
 **Server URL** (used by every client): `https://mcp.vibeseo.dev/mcp`
 
@@ -39,7 +39,7 @@ Custom MCP connector with OAuth.
 
 ## Cursor
 
-**One-click:** [Install in Cursor](https://vibeseo.dev/agent) (from the hosted setup page — the deeplink is generated dynamically).
+**One-click:** the [VibeSEO MCP page](https://vibeseo.dev/mcp) generates the install deeplink dynamically — open it and click "Install in Cursor".
 
 **Manual** — `~/.cursor/mcp.json`:
 
@@ -57,7 +57,7 @@ Custom MCP connector with OAuth.
 
 ## VS Code
 
-**One-click:** [Install in VS Code](https://vibeseo.dev/agent) (from the hosted setup page).
+**One-click:** the [VibeSEO MCP page](https://vibeseo.dev/mcp) generates the install deeplink dynamically — open it and click "Install in VS Code".
 
 **Manual** — `.vscode/mcp.json`:
 

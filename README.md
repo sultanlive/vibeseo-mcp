@@ -7,12 +7,12 @@ VibeSEO MCP brings live SEO work into your AI assistant. Connect Claude, ChatGPT
 - **Server URL:** `https://mcp.vibeseo.dev/mcp`
 - **Transport:** Streamable HTTP
 - **Auth:** OAuth 2.1 with PKCE, scope `mcp:tools`
-- **Setup page:** [vibeseo.dev/agent](https://vibeseo.dev/agent)
+- **Landing & setup:** [vibeseo.dev/mcp](https://vibeseo.dev/mcp)
 
 ## Quick start
 
 1. Create a free VibeSEO account at [vibeseo.dev](https://vibeseo.dev).
-2. Open the [setup page](https://vibeseo.dev/agent) and pick your client.
+2. Open the [VibeSEO MCP page](https://vibeseo.dev/mcp) and follow the setup link for your client.
 3. Use the one-click install, copied CLI command, or manual JSON/TOML snippet.
 4. Authorize with OAuth when your client opens the consent screen.
 5. Ask your assistant for SEO work in natural language.
@@ -80,7 +80,7 @@ More: [docs/examples.md](docs/examples.md).
 
 ## Authorization & approval gate
 
-Auth is OAuth 2.1 with PKCE. Your assistant gets a token scoped to `mcp:tools`, tied to your VibeSEO account. Tokens are revocable at any time from the [setup page](https://vibeseo.dev/agent) under "Connected clients" — disconnecting a client revokes its access immediately.
+Auth is OAuth 2.1 with PKCE. Your assistant gets a token scoped to `mcp:tools`, tied to your VibeSEO account. Tokens are revocable at any time from the [VibeSEO MCP page](https://vibeseo.dev/mcp) under "Connected clients" — disconnecting a client revokes its access immediately.
 
 **MCP can help manage the workflow, but VibeSEO keeps the approval gate before content goes live.** Drafts and scheduled posts still go through the standard review step inside VibeSEO.
 
@@ -89,7 +89,7 @@ OAuth flow details: [docs/oauth.md](docs/oauth.md).
 ## Project links
 
 - Product: [vibeseo.dev](https://vibeseo.dev)
-- Setup page: [vibeseo.dev/agent](https://vibeseo.dev/agent)
+- VibeSEO MCP page: [vibeseo.dev/mcp](https://vibeseo.dev/mcp)
 - MCP server: `https://mcp.vibeseo.dev/mcp`
 - OAuth issuer: `https://api.vibeseo.dev`
 - Issues: [github.com/sultanlive/vibeseo-mcp/issues](https://github.com/sultanlive/vibeseo-mcp/issues)

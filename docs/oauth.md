@@ -39,8 +39,8 @@ The only scope you grant is **`mcp:tools`** (plus `openid` and `offline_access` 
 
 ## Managing access
 
-The [setup page](https://vibeseo.dev/agent) lists every client that has completed OAuth under "Connected clients". You can disconnect any client to revoke its access immediately. To reconnect, the user has to authorize again.
+The [VibeSEO MCP page](https://vibeseo.dev/mcp) lists every client that has completed OAuth under "Connected clients". You can disconnect any client to revoke its access immediately. To reconnect, the user has to authorize again.
 
 ## Token lifetime
 
-Access tokens are short-lived; the refresh token (via `offline_access`) lets your client renew without re-prompting until you explicitly revoke from the setup page.
+Access tokens are short-lived; the refresh token (via `offline_access`) lets your client renew without re-prompting until you explicitly revoke from the VibeSEO MCP page.

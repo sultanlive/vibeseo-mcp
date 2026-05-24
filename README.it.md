@@ -1,0 +1,105 @@
+[en](README.md) • [es](README.es.md) • [de](README.de.md) • [ja](README.ja.md) • [fr](README.fr.md) • [pt](README.pt.md) • [ru](README.ru.md) • **it** • [nl](README.nl.md) • [pl](README.pl.md)
+
+# VibeSEO MCP
+
+**Server Model Context Protocol per ricerca SEO, audit e workflow di contenuto — protetto da OAuth.**
+
+VibeSEO MCP porta il lavoro SEO live direttamente nel tuo assistente AI. Collega Claude, ChatGPT, Cursor, VS Code o un client CLI a VibeSEO. Poi chiedi in linguaggio naturale ricerca di parole chiave, audit, backlink, trend di Search Console e azioni di workflow di contenuto.
+
+- **URL del server:** `https://mcp.vibeseo.dev/mcp`
+- **Trasporto:** Streamable HTTP
+- **Auth:** OAuth 2.1 con PKCE, scope `mcp:tools`
+- **Landing e setup:** [vibeseo.dev/mcp](https://vibeseo.dev/mcp)
+
+## Avvio rapido
+
+1. Crea un account VibeSEO gratuito su [vibeseo.dev](https://vibeseo.dev).
+2. Apri la [pagina VibeSEO MCP](https://vibeseo.dev/mcp) e segui il link di setup per il tuo client.
+3. Usa l'installazione one-click, il comando CLI copiato o lo snippet JSON/TOML manuale.
+4. Autorizza con OAuth quando il client apre la schermata di consenso.
+5. Chiedi al tuo assistente di fare lavoro SEO in linguaggio naturale.
+
+## Cosa puoi fare dalla chat
+
+- **🔍 Ricerca di parole chiave** — volumi, CPC, difficoltà, intent, idee dall'autocomplete, parole chiave-domanda, confronti e termini correlati.
+- **🌐 Analisi di dominio** — panoramica del dominio, top keyword, top pagine, storico di traffico e suggerimenti di competitor.
+- **🔗 Backlink** — profilo, domini referenti, anchor text e storico di qualsiasi dominio.
+- **🛠️ Audit di sito** — avvia audit, leggi i risultati di crawl, lista i problemi e prioritizza i fix.
+- **📈 Performance GSC** — riassunti dalla Google Search Console collegata, top query, top pagine, trend e diagnostica a livello di query.
+- **🚀 Workflow di contenuto** — lista post, aggiorna idee, genera bozze, approva articoli pronti, programma e revisiona.
+
+## Superficie di tool
+
+Il server MCP rispecchia lo stesso workflow SEO interno a VibeSEO. Categorie:
+
+| Categoria | Cosa copre |
+|---|---|
+| 📁 **Projects** | Creare progetti, aggiornare le info del sito, gestire i competitor, tenere il contesto dell'account aggiornato. |
+| 🔍 **Keywords** | Metriche, batch, suggerimenti, autocomplete, domande, confronti, storico, cleanup. |
+| 🌐 **Domains** | Panoramica, top keyword, top pagine, storico di traffico, idee di competitor, storico di lookup. |
+| 🔗 **Backlinks** | Profilo, domini referenti, anchor, storico backlink. |
+| 🧯 **Audits** | Avviare audit di sito, leggere riassunti, listare problemi, ispezionare pagine crawlate. |
+| 📊 **GSC** | Proprietà collegate, stato, riassunti, top query, top pagine, trend, dettagli per query. |
+| ✍️ **Content** | Idee, bozze, approvazioni, scheduling, target di pubblicazione, pubblicazioni, scoring di keyword. |
+| ⚔️ **Competitive** | Panoramica competitiva e analisi di keyword gap tra domini. |
+| 📍 **Locations** | Paesi, lingue, localizzazioni, lookup di città, codici di localizzazione per ricerca per mercato. |
+
+L'insieme di tool live evolve. Per la lista esatta e aggiornata, esegui `tools/list` contro `https://mcp.vibeseo.dev/mcp`.
+
+## Client supportati
+
+Percorsi di installazione per ciascuno:
+
+- **Claude** (web e desktop) — pagina Connectors o `claude_desktop_config.json`
+- **ChatGPT** — connector MCP custom con OAuth
+- **Cursor** — installazione one-click via deeplink, o `~/.cursor/mcp.json`
+- **VS Code** — installazione one-click via deeplink, o `.vscode/mcp.json`
+- **Claude Code (CLI)** — `claude mcp add --transport http vibeseo https://mcp.vibeseo.dev/mcp`
+- **Gemini CLI** — `gemini mcp add --transport http vibeseo https://mcp.vibeseo.dev/mcp`
+- **Codex CLI** — `codex mcp add vibeseo --url https://mcp.vibeseo.dev/mcp`
+- **Client MCP HTTP generico** — punta all'URL e lascia che completi l'OAuth discovery
+
+Istruzioni complete di installazione per client: [docs/setup.md](docs/setup.md).
+
+## Esempi di prompt
+
+**Piano di keyword**
+> «Trova keyword di confronto per la mia app di invoicing che siano realistiche da rankare.»
+
+→ VibeSEO restituisce una lista di topic priorizzati (intent commerciale, difficoltà più bassa, angolo di confronto).
+
+**Audit tecnico**
+> «Audita il mio progetto e dimmi cosa fixare prima di pubblicare altri articoli.»
+
+→ VibeSEO trasforma i dati di crawl in prossime azioni (canonical mancanti, immagini troppo pesanti, gap di link interni).
+
+**Coda di pubblicazione**
+> «Mostra i post pronti, genera la prossima bozza e schedula quello più forte.»
+
+→ VibeSEO gestisce il workflow di contenuto (contatori di Ready/Drafting, schedula il prossimo articolo approvato).
+
+Altro: [docs/examples.md](docs/examples.md).
+
+## Autorizzazione e approval gate
+
+Auth è OAuth 2.1 con PKCE. Il tuo assistente ottiene un token con scope `mcp:tools`, legato al tuo account VibeSEO. I token sono revocabili in qualsiasi momento dalla [pagina VibeSEO MCP](https://vibeseo.dev/mcp) sotto «Connected clients» — disconnettere un client revoca l'accesso immediatamente.
+
+**MCP può aiutare a gestire il workflow, ma VibeSEO mantiene l'approval gate prima che il contenuto vada live.** Bozze e post schedulati passano comunque dallo step di review standard dentro VibeSEO.
+
+Dettagli dell'OAuth flow: [docs/oauth.md](docs/oauth.md).
+
+## Link del progetto
+
+- Prodotto: [vibeseo.dev](https://vibeseo.dev)
+- Pagina VibeSEO MCP: [vibeseo.dev/mcp](https://vibeseo.dev/mcp)
+- Server MCP: `https://mcp.vibeseo.dev/mcp`
+- OAuth issuer: `https://api.vibeseo.dev`
+- Issues: [github.com/sultanlive/vibeseo-mcp/issues](https://github.com/sultanlive/vibeseo-mcp/issues)
+
+## Licenza
+
+MIT — vedi [LICENSE](LICENSE).
+
+---
+
+Fatto da [@sultanlive](https://github.com/sultanlive). VibeSEO è una piattaforma SEO hosted; questo repo è la documentazione del suo server MCP pubblico. Il sorgente del server non è open.

@@ -1,3 +1,5 @@
+**en** • [es](README.es.md) • [de](README.de.md) • [ja](README.ja.md) • [fr](README.fr.md) • [pt](README.pt.md) • [ru](README.ru.md) • [it](README.it.md) • [nl](README.nl.md) • [pl](README.pl.md)
+
 # VibeSEO MCP
 
 **Model Context Protocol server for SEO research, audits, and content workflow — secured by OAuth.**

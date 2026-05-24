@@ -1,0 +1,36 @@
+name: Publish MCP Registry
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install mcp-publisher
+        run: |
+          OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+          ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')
+          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_${OS}_${ARCH}.tar.gz" \
+            | tar xz mcp-publisher
+          sudo install -m 755 mcp-publisher /usr/local/bin/mcp-publisher
+          mcp-publisher --version
+
+      - name: Validate server.json
+        run: mcp-publisher validate
+
+      - name: Login (DNS)
+        env:
+          MCP_PRIVATE_KEY: ${{ secrets.MCP_PRIVATE_KEY }}
+        run: mcp-publisher login dns --domain vibeseo.dev --private-key "$MCP_PRIVATE_KEY"
+
+      - name: Publish
+        run: mcp-publisher publish ./server.json

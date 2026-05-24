@@ -2,6 +2,10 @@
 
 All notable changes to the VibeSEO MCP listing are recorded here. Versions match the records published to `registry.modelcontextprotocol.io`.
 
+## 0.1.3 — 2026-05-24
+
+- No functional change. Smoke test of the new CI workflow (`.github/workflows/publish-mcp.yml`) — first publish driven entirely by `git push --tags v0.1.3`.
+
 ## 0.1.2 — 2026-05-24
 
 - Add `icons` field — client UIs (Claude Desktop, VS Code `@mcp`, aggregators) now render the VibeSEO brand mark from `vibeseo.dev/brand/vibeseo-icon.svg` instead of a placeholder.

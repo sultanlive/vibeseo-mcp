@@ -11,6 +11,26 @@ VibeSEO MCP lleva el trabajo SEO en vivo a tu asistente de IA. Conecta Claude, C
 - **Auth:** OAuth 2.1 con PKCE, scope `mcp:tools`
 - **Landing y setup:** [vibeseo.dev/mcp](https://vibeseo.dev/mcp)
 
+## Instalación
+
+VibeSEO MCP es un servidor **remoto, seguro con OAuth**. Añade esto al config MCP de tu cliente:
+
+```json
+{
+  "mcpServers": {
+    "vibeseo": {
+      "url": "https://mcp.vibeseo.dev/mcp"
+    }
+  }
+}
+```
+
+**Instalación en un clic:**
+
+<a href="cursor://anysphere.cursor-deeplink/mcp/install?name=vibeseo&config=eyJ1cmwiOiJodHRwczovL21jcC52aWJlc2VvLmRldi9tY3AifQ=="><img src="https://vibeseo.dev/icons/cursor.svg" width="36" alt="Cursor"></a>&nbsp;&nbsp;<a href="vscode:mcp/install?%7B%22name%22%3A%22vibeseo%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.vibeseo.dev%2Fmcp%22%7D"><img src="https://vibeseo.dev/icons/vscode.svg" width="36" alt="VS Code"></a>&nbsp;&nbsp;<a href="https://claude.ai/settings/connectors"><img src="https://vibeseo.dev/icons/claude-desktop.svg" width="36" alt="Claude"></a>&nbsp;&nbsp;<a href="https://chatgpt.com/settings/connectors"><img src="https://vibeseo.dev/icons/chatgpt-icon.svg" width="36" alt="ChatGPT"></a>
+
+Clientes CLI (Claude Code, Gemini CLI, Codex CLI) y snippets manuales: ver [Clientes soportados](#clientes-soportados).
+
 ## Empezar rápido
 
 1. Crea una cuenta gratuita de VibeSEO en [vibeseo.dev](https://vibeseo.dev).

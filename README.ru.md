@@ -11,6 +11,26 @@ VibeSEO MCP приносит живую SEO-работу прямо в ваш AI
 - **Auth:** OAuth 2.1 с PKCE, scope `mcp:tools`
 - **Лендинг и setup:** [vibeseo.dev/mcp](https://vibeseo.dev/mcp)
 
+## Установка
+
+VibeSEO MCP — это **удалённый, защищённый OAuth** сервер. Добавьте это в MCP-конфиг вашего клиента:
+
+```json
+{
+  "mcpServers": {
+    "vibeseo": {
+      "url": "https://mcp.vibeseo.dev/mcp"
+    }
+  }
+}
+```
+
+**Установка в один клик:**
+
+<a href="cursor://anysphere.cursor-deeplink/mcp/install?name=vibeseo&config=eyJ1cmwiOiJodHRwczovL21jcC52aWJlc2VvLmRldi9tY3AifQ=="><img src="https://vibeseo.dev/icons/cursor.svg" width="36" alt="Cursor"></a>&nbsp;&nbsp;<a href="vscode:mcp/install?%7B%22name%22%3A%22vibeseo%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.vibeseo.dev%2Fmcp%22%7D"><img src="https://vibeseo.dev/icons/vscode.svg" width="36" alt="VS Code"></a>&nbsp;&nbsp;<a href="https://claude.ai/settings/connectors"><img src="https://vibeseo.dev/icons/claude-desktop.svg" width="36" alt="Claude"></a>&nbsp;&nbsp;<a href="https://chatgpt.com/settings/connectors"><img src="https://vibeseo.dev/icons/chatgpt-icon.svg" width="36" alt="ChatGPT"></a>
+
+CLI-клиенты (Claude Code, Gemini CLI, Codex CLI) и ручные сниппеты: см. [Поддерживаемые клиенты](#поддерживаемые-клиенты).
+
 ## Быстрый старт
 
 1. Создайте бесплатный аккаунт VibeSEO на [vibeseo.dev](https://vibeseo.dev).

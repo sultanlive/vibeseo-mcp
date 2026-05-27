@@ -1,6 +1,6 @@
 # Example prompts
 
-VibeSEO MCP works best when you ask like you'd ask an SEO teammate — VibeSEO calls the right tools and returns concrete next steps. A few starting points.
+Ask VibeSEO MCP the way you'd ask an SEO teammate — it calls the right tools and returns concrete next steps. A few starting points.
 
 ---
 

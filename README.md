@@ -108,6 +108,10 @@ Auth is OAuth 2.1 with PKCE. Your assistant gets a token scoped to `mcp:tools`, 
 
 OAuth flow details: [docs/oauth.md](docs/oauth.md).
 
+## Troubleshooting
+
+Common connection, OAuth, and tool-call errors: [docs/troubleshooting.md](docs/troubleshooting.md).
+
 ## Project links
 
 - Product: [vibeseo.dev](https://vibeseo.dev)

@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "dev.vibeseo/vibeseo",
   "title": "VibeSEO",
-  "description": "SEO research, audits, backlinks, GSC, and content workflow tools for AI agents.",
+  "description": "SEO research, keyword discovery, domain analysis, site audits, Google Search Console, backlinks, and content workflow \u2014 all from your AI assistant. OAuth 2.1 remote MCP server.",
   "websiteUrl": "https://vibeseo.dev/mcp",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": {
     "url": "https://github.com/sultanlive/vibeseo-mcp",
     "source": "github"
@@ -19,12 +19,33 @@
     {
       "src": "https://vibeseo.dev/brand/vibeseo-icon.svg",
       "mimeType": "image/svg+xml",
-      "sizes": ["any"]
+      "sizes": [
+        "any"
+      ]
     }
   ],
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
-      "com.github": { "serverDisplayName": "VibeSEO" }
+      "com.github": {
+        "serverDisplayName": "VibeSEO",
+        "tags": [
+          "seo",
+          "keyword-research",
+          "content-workflow",
+          "site-audit",
+          "search-console",
+          "backlinks",
+          "domain-analysis",
+          "content-marketing",
+          "ai-seo"
+        ],
+        "categories": [
+          "SEO",
+          "Marketing",
+          "Content",
+          "Analytics"
+        ]
+      }
     }
   }
 }

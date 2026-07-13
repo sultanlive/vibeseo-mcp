@@ -4,6 +4,8 @@ The hosted page at [vibeseo.dev/mcp](https://vibeseo.dev/mcp) is the canonical s
 
 **Server URL** (used by every client): `https://mcp.vibeseo.dev/mcp`
 
+Connecting a client only authorizes it. The tools themselves need a live VibeSEO subscription — a card-required trial ($0 today) or a paid plan. See [Plans & access](../README.md#plans--access); if you call a tool without one, the result comes back with a one-click checkout link.
+
 ---
 
 ## Claude (web & desktop)

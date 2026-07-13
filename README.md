@@ -33,7 +33,7 @@ CLI clients (Claude Code, Gemini CLI, Codex CLI) and manual snippets: see [Suppo
 
 ## Quick start
 
-1. Create a free VibeSEO account at [vibeseo.dev](https://vibeseo.dev).
+1. Create a VibeSEO account at [vibeseo.dev](https://vibeseo.dev) and start a trial — $0 today, card required (see [Plans & access](#plans--access)).
 2. Open the [VibeSEO MCP page](https://vibeseo.dev/mcp) and follow the setup link for your client.
 3. Use the one-click install, copied CLI command, or manual JSON/TOML snippet.
 4. Authorize with OAuth when your client opens the consent screen.
@@ -43,10 +43,10 @@ CLI clients (Claude Code, Gemini CLI, Codex CLI) and manual snippets: see [Suppo
 
 - **🔍 Keyword research** — volumes, CPC, difficulty, intent, autocomplete ideas, question keywords, comparisons, and related terms.
 - **🌐 Domain analysis** — domain overview, top keywords, top pages, traffic history, and competitor suggestions.
-- **🔗 Backlinks** — profile, referring domains, anchor text, and history of any domain.
 - **🛠️ Site audits** — start audits, read crawl results, list issues, and prioritize fixes.
 - **📈 GSC performance** — connected Google Search Console summaries, top queries, top pages, trends, and query-level diagnostics.
-- **🚀 Content workflow** — list posts, refresh ideas, generate drafts, approve ready articles, schedule, and review.
+- **🔗 Backlinks** *(Pro)* — profile, referring domains, anchor text, and history of any domain.
+- **🚀 Content workflow** *(Pro)* — list posts, refresh ideas, generate drafts, approve ready articles, schedule, and review.
 
 ## Tool surface
 
@@ -54,17 +54,33 @@ The MCP server maps to the same SEO workflow inside VibeSEO. Categories:
 
 | Category | What it covers |
 |---|---|
-| 📁 **Projects** | Create projects, update site information, manage competitors, keep account context current. |
-| 🔍 **Keywords** | Metrics, batches, suggestions, autocomplete, questions, comparisons, history, cleanup. |
+| 📁 **Projects** | List projects, read project and site information, list and replace tracked competitors. |
+| 🔍 **Keywords** | Metrics, autocomplete, related, question, preposition and comparison keywords, lookup history. |
 | 🌐 **Domains** | Overview, top keywords, top pages, traffic history, competitor ideas, lookup history. |
-| 🔗 **Backlinks** | Profile, referring domains, anchors, backlink history. |
 | 🧯 **Audits** | Start site audits, read summaries, list issues, inspect crawled pages. |
-| 📊 **GSC** | Connected properties, status, summaries, top queries, top pages, trends, query details. |
-| ✍️ **Content** | Ideas, drafts, approvals, scheduling, publishing targets, publications, keyword scoring. |
+| 📊 **GSC** | Connection status, summaries, top queries, top pages, trends, query details. |
 | ⚔️ **Competitive** | Competitive overview and keyword gap analysis across domains. |
 | 📍 **Locations** | Countries, languages, locations, city lookups, location codes for market-specific research. |
+| 🔗 **Backlinks** *(Pro)* | Profile, referring domains, anchors, backlink history. |
+| ✍️ **Content** *(Pro)* | Ideas, drafts, approvals, scheduling, content calendar, publications, keyword scoring. |
 
 The live tool set evolves. For the exact, up-to-date list, run `tools/list` against `https://mcp.vibeseo.dev/mcp`.
+
+## Plans & access
+
+The tools call paid data providers and AI models on your behalf, so they need a live VibeSEO subscription — a trial or a paid plan. There is no anonymous or free-forever tier.
+
+| | Trial | SEO Researcher | Pro |
+|---|---|---|---|
+| **Price** | $0 today, card required | $9/mo | $39/mo |
+| Keywords, domains, audits, GSC, competitive, locations | ✅ | ✅ | ✅ |
+| Backlink data | — | — | ✅ |
+| AI content workflow (ideas, drafts, publishing) | — | — | ✅ |
+| Monthly credits | 40 | 400 | 1500 |
+
+The trial is card-required, starts at $0, and can be cancelled at any time; it runs at research-level limits and converts to the plan you picked when it ends. Credits meter the calls that cost money (keyword lookups, audits, AI generation) — see [vibeseo.dev/pricing](https://vibeseo.dev/pricing) for the current plans.
+
+**You never have to leave the chat to pay.** If you call a tool without an active subscription, out of credits, or on a plan that doesn't include it, the tool result comes back with a one-click checkout or top-up link for your account.
 
 ## Supported clients
 

@@ -33,7 +33,7 @@ Klienty CLI (Claude Code, Gemini CLI, Codex CLI) i ręczne snippety: zobacz [Wsp
 
 ## Szybki start
 
-1. Załóż darmowe konto VibeSEO na [vibeseo.dev](https://vibeseo.dev).
+1. Załóż konto VibeSEO na [vibeseo.dev](https://vibeseo.dev) i rozpocznij trial — $0 dziś, wymagana karta (zobacz [Plany i dostęp](#plany-i-dostęp)).
 2. Otwórz [stronę VibeSEO MCP](https://vibeseo.dev/mcp) i przejdź do linka instalacji dla swojego klienta.
 3. Skorzystaj z instalacji one-click, skopiowanej komendy CLI lub ręcznego snippetu JSON/TOML.
 4. Autoryzuj przez OAuth, gdy klient otworzy ekran zgody.
@@ -43,10 +43,10 @@ Klienty CLI (Claude Code, Gemini CLI, Codex CLI) i ręczne snippety: zobacz [Wsp
 
 - **🔍 Analiza słów kluczowych** — wolumeny, CPC, trudność, intencja, autouzupełnianie, słowa kluczowe-pytania, porównania i powiązane terminy.
 - **🌐 Analiza domeny** — przegląd domeny, top słowa kluczowe, top strony, historia ruchu i sugestie konkurentów.
-- **🔗 Backlinki** — profil, domeny odsyłające, anchor text i historia dowolnej domeny.
 - **🛠️ Audyty strony** — uruchamiaj audyty, czytaj wyniki crawla, listuj problemy i priorytetyzuj poprawki.
 - **📈 Performance w GSC** — podsumowania z podłączonej Google Search Console, top zapytania, top strony, trendy i diagnostyka per zapytanie.
-- **🚀 Workflow treści** — listuj posty, odświeżaj pomysły, generuj szkice, zatwierdzaj gotowe artykuły, planuj i rewjuj.
+- **🔗 Backlinki** *(Pro)* — profil, domeny odsyłające, anchor text i historia dowolnej domeny.
+- **🚀 Workflow treści** *(Pro)* — listuj posty, odświeżaj pomysły, generuj szkice, zatwierdzaj gotowe artykuły, planuj i rewjuj.
 
 ## Powierzchnia narzędzi
 
@@ -54,17 +54,33 @@ Serwer MCP odzwierciedla ten sam workflow SEO co wewnątrz VibeSEO. Kategorie:
 
 | Kategoria | Co pokrywa |
 |---|---|
-| 📁 **Projects** | Tworzenie projektów, aktualizacja informacji o stronie, zarządzanie konkurencją, utrzymywanie kontekstu konta na bieżąco. |
-| 🔍 **Keywords** | Metryki, batche, sugestie, autouzupełnianie, pytania, porównania, historia, cleanup. |
+| 📁 **Projects** | Listowanie projektów, odczyt informacji o projekcie i stronie, listowanie i zastępowanie śledzonych konkurentów. |
+| 🔍 **Keywords** | Metryki, autouzupełnianie, powiązane, pytania, przyimkowe i porównawcze słowa kluczowe, historia lookupów. |
 | 🌐 **Domains** | Przegląd, top słowa kluczowe, top strony, historia ruchu, pomysły konkurencji, historia lookupów. |
-| 🔗 **Backlinks** | Profil, domeny odsyłające, anchory, historia backlinków. |
 | 🧯 **Audits** | Uruchamianie audytów strony, czytanie podsumowań, listowanie problemów, inspekcja przecrawlowanych stron. |
-| 📊 **GSC** | Podłączone properties, status, podsumowania, top zapytania, top strony, trendy, szczegóły per zapytanie. |
-| ✍️ **Content** | Pomysły, szkice, zatwierdzenia, planowanie, targety publikacji, publikacje, scoring słów kluczowych. |
+| 📊 **GSC** | Status połączenia, podsumowania, top zapytania, top strony, trendy, szczegóły zapytań. |
 | ⚔️ **Competitive** | Przegląd konkurencyjny i analiza keyword gap między domenami. |
 | 📍 **Locations** | Kraje, języki, lokalizacje, lookup miast, kody lokalizacji do badań per rynek. |
+| 🔗 **Backlinks** *(Pro)* | Profil, domeny odsyłające, anchory, historia backlinków. |
+| ✍️ **Content** *(Pro)* | Pomysły, szkice, zatwierdzenia, planowanie, kalendarz treści, publikacje, scoring słów kluczowych. |
 
 Zestaw narzędzi na żywo ewoluuje. Po dokładną, aktualną listę — wykonaj `tools/list` na `https://mcp.vibeseo.dev/mcp`.
+
+## Plany i dostęp
+
+Narzędzia w Twoim imieniu wywołują płatnych dostawców danych i modele AI, dlatego wymagają aktywnej subskrypcji VibeSEO — trialu lub płatnego planu. Nie ma anonimowego ani darmowego na zawsze poziomu.
+
+| | Trial | SEO Researcher | Pro |
+|---|---|---|---|
+| **Cena** | $0 dziś, wymagana karta | $9/mies. | $39/mies. |
+| Słowa kluczowe, domeny, audyty, GSC, competitive, lokalizacje | ✅ | ✅ | ✅ |
+| Dane backlinkowe | — | — | ✅ |
+| Workflow treści AI (pomysły, szkice, publikacja) | — | — | ✅ |
+| Miesięczne kredyty | 40 | 400 | 1500 |
+
+Trial wymaga podania karty, zaczyna się od $0 i można go anulować w dowolnym momencie; działa w limitach na poziomie research i po zakończeniu przechodzi w wybrany przez Ciebie plan. Kredyty mierzą wywołania, które kosztują (lookupy słów kluczowych, audyty, generowanie AI) — aktualne plany znajdziesz na [vibeseo.dev/pricing](https://vibeseo.dev/pricing).
+
+**Nigdy nie musisz wychodzić z czatu, żeby zapłacić.** Jeśli wywołasz narzędzie bez aktywnej subskrypcji, bez kredytów lub na planie, który go nie obejmuje, wynik narzędzia zawiera link do checkoutu jednym kliknięciem lub doładowania konta.
 
 ## Wspierane klienty
 

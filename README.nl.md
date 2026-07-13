@@ -33,7 +33,7 @@ CLI-clients (Claude Code, Gemini CLI, Codex CLI) en handmatige snippets: zie [On
 
 ## Snelle start
 
-1. Maak een gratis VibeSEO-account op [vibeseo.dev](https://vibeseo.dev).
+1. Maak een VibeSEO-account op [vibeseo.dev](https://vibeseo.dev) en start een proefperiode — $0 vandaag, creditcard vereist (zie [Abonnementen & toegang](#abonnementen--toegang)).
 2. Open de [VibeSEO MCP-pagina](https://vibeseo.dev/mcp) en volg de setup-link voor jouw client.
 3. Gebruik de één-klik-installatie, het gekopieerde CLI-commando of het handmatige JSON/TOML-snippet.
 4. Autoriseer via OAuth wanneer je client het toestemmingsscherm opent.
@@ -43,10 +43,10 @@ CLI-clients (Claude Code, Gemini CLI, Codex CLI) en handmatige snippets: zie [On
 
 - **🔍 Zoekwoordonderzoek** — volumes, CPC, moeilijkheid, intent, autocomplete-ideeën, vraag-zoekwoorden, vergelijkingen en gerelateerde termen.
 - **🌐 Domeinanalyse** — domeinoverzicht, top-zoekwoorden, top-pagina's, verkeerhistorie en concurrent-suggesties.
-- **🔗 Backlinks** — profiel, verwijzende domeinen, anchor text en historie van elk domein.
 - **🛠️ Site-audits** — start audits, lees crawl-resultaten, lijst issues op en prioriteer fixes.
 - **📈 GSC-performance** — overzichten van gekoppelde Google Search Console, top-queries, top-pagina's, trends en diagnostiek op queryniveau.
-- **🚀 Content-workflow** — lijst posts, ververs ideeën, genereer drafts, keur goed, plan in en review.
+- **🔗 Backlinks** *(Pro)* — profiel, verwijzende domeinen, anchor text en historie van elk domein.
+- **🚀 Content-workflow** *(Pro)* — lijst posts, ververs ideeën, genereer drafts, keur goed, plan in en review.
 
 ## Tool-oppervlak
 
@@ -54,17 +54,33 @@ De MCP-server is een spiegel van dezelfde SEO-workflow binnen VibeSEO. Categorie
 
 | Categorie | Wat het dekt |
 |---|---|
-| 📁 **Projects** | Projecten aanmaken, site-info bijwerken, concurrenten beheren, account-context actueel houden. |
-| 🔍 **Keywords** | Metrics, batches, suggesties, autocomplete, vragen, vergelijkingen, historie, cleanup. |
+| 📁 **Projects** | Projecten opsommen, project- en site-informatie lezen, gevolgde concurrenten opsommen en vervangen. |
+| 🔍 **Keywords** | Metrics, autocomplete, gerelateerde, vraag-, voorzetsel- en vergelijkings-zoekwoorden, lookup-historie. |
 | 🌐 **Domains** | Overzicht, top-zoekwoorden, top-pagina's, verkeerhistorie, concurrent-ideeën, lookup-historie. |
-| 🔗 **Backlinks** | Profiel, verwijzende domeinen, anchors, backlink-historie. |
 | 🧯 **Audits** | Site-audits starten, samenvattingen lezen, issues lijsten, gecrawlde pagina's inspecteren. |
-| 📊 **GSC** | Gekoppelde properties, status, samenvattingen, top-queries, top-pagina's, trends, query-details. |
-| ✍️ **Content** | Ideeën, drafts, goedkeuringen, scheduling, publishing-targets, publicaties, keyword-scoring. |
+| 📊 **GSC** | Verbindingsstatus, samenvattingen, top-queries, top-pagina's, trends, query-details. |
 | ⚔️ **Competitive** | Concurrentie-overzicht en keyword-gap-analyse tussen domeinen. |
 | 📍 **Locations** | Landen, talen, locaties, stad-lookups, locatiecodes voor marktspecifiek onderzoek. |
+| 🔗 **Backlinks** *(Pro)* | Profiel, verwijzende domeinen, anchors, backlink-historie. |
+| ✍️ **Content** *(Pro)* | Ideeën, drafts, goedkeuringen, scheduling, content-kalender, publicaties, keyword-scoring. |
 
 De live tool-set evolueert. Voor de exacte, actuele lijst: run `tools/list` tegen `https://mcp.vibeseo.dev/mcp`.
+
+## Abonnementen & toegang
+
+De tools roepen namens jou betaalde dataproviders en AI-modellen aan, dus ze vereisen een actief VibeSEO-abonnement — een proefperiode of een betaald plan. Er is geen anonieme of gratis-voor-altijd laag.
+
+| | Trial | SEO Researcher | Pro |
+|---|---|---|---|
+| **Prijs** | $0 vandaag, creditcard vereist | $9/mnd | $39/mnd |
+| Keywords, domains, audits, GSC, competitive, locations | ✅ | ✅ | ✅ |
+| Backlink-data | — | — | ✅ |
+| AI-content-workflow (ideeën, drafts, publiceren) | — | — | ✅ |
+| Maandelijkse credits | 40 | 400 | 1500 |
+
+De proefperiode is creditcard-verplicht, start op $0 en kan op elk moment worden opgezegd; ze draait op research-niveau-limieten en zet zich om naar het door jou gekozen plan wanneer ze eindigt. Credits meten de calls die geld kosten (keyword-lookups, audits, AI-generatie) — zie [vibeseo.dev/pricing](https://vibeseo.dev/pricing) voor de actuele plannen.
+
+**Je hoeft de chat nooit te verlaten om te betalen.** Als je een tool aanroept zonder actief abonnement, zonder credits, of op een plan dat het niet omvat, komt het tool-resultaat terug met een één-klik-checkout- of top-up-link voor je account.
 
 ## Ondersteunde clients
 

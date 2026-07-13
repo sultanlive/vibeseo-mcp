@@ -33,7 +33,7 @@ Clientes CLI (Claude Code, Gemini CLI, Codex CLI) y snippets manuales: ver [Clie
 
 ## Empezar rápido
 
-1. Crea una cuenta gratuita de VibeSEO en [vibeseo.dev](https://vibeseo.dev).
+1. Crea una cuenta de VibeSEO en [vibeseo.dev](https://vibeseo.dev) y empieza una prueba — $0 hoy, tarjeta requerida (ver [Planes y acceso](#planes-y-acceso)).
 2. Abre la [página de VibeSEO MCP](https://vibeseo.dev/mcp) y sigue el enlace de instalación para tu cliente.
 3. Usa la instalación en un clic, el comando CLI copiado o el snippet manual de JSON/TOML.
 4. Autoriza con OAuth cuando tu cliente abra la pantalla de consentimiento.
@@ -43,10 +43,10 @@ Clientes CLI (Claude Code, Gemini CLI, Codex CLI) y snippets manuales: ver [Clie
 
 - **🔍 Investigación de palabras clave** — volúmenes, CPC, dificultad, intención, ideas de autocompletar, keywords-pregunta, comparaciones y términos relacionados.
 - **🌐 Análisis de dominio** — overview de dominio, top keywords, top páginas, histórico de tráfico y sugerencias de competidores.
-- **🔗 Backlinks** — perfil, dominios referentes, anchor text e histórico de cualquier dominio.
 - **🛠️ Auditorías de sitio** — lanzar auditorías, leer resultados de crawl, listar issues y priorizar arreglos.
 - **📈 Performance en GSC** — resúmenes de la Google Search Console conectada, top queries, top páginas, tendencias y diagnóstico a nivel de query.
-- **🚀 Flujo de contenido** — listar posts, refrescar ideas, generar drafts, aprobar artículos listos, programar y revisar.
+- **🔗 Backlinks** *(Pro)* — perfil, dominios referentes, anchor text e histórico de cualquier dominio.
+- **🚀 Flujo de contenido** *(Pro)* — listar posts, refrescar ideas, generar drafts, aprobar artículos listos, programar y revisar.
 
 ## Superficie de herramientas
 
@@ -54,17 +54,33 @@ El servidor MCP refleja el mismo flujo SEO que vive dentro de VibeSEO. Categorí
 
 | Categoría | Qué cubre |
 |---|---|
-| 📁 **Projects** | Crear proyectos, actualizar información del sitio, gestionar competidores y mantener el contexto de la cuenta al día. |
-| 🔍 **Keywords** | Métricas, batches, sugerencias, autocomplete, preguntas, comparaciones, historial, cleanup. |
+| 📁 **Projects** | Listar proyectos, leer información del proyecto y del sitio, listar y reemplazar competidores rastreados. |
+| 🔍 **Keywords** | Métricas, autocomplete, keywords relacionadas, de pregunta, de preposición y de comparación, historial de lookups. |
 | 🌐 **Domains** | Overview, top keywords, top páginas, histórico de tráfico, ideas de competidores, historial de lookups. |
-| 🔗 **Backlinks** | Perfil, dominios referentes, anchors, histórico de backlinks. |
 | 🧯 **Audits** | Lanzar auditorías de sitio, leer resúmenes, listar issues, inspeccionar páginas crawleadas. |
-| 📊 **GSC** | Propiedades conectadas, estado, resúmenes, top queries, top páginas, tendencias, detalles por query. |
-| ✍️ **Content** | Ideas, drafts, aprobaciones, scheduling, targets de publicación, publicaciones, scoring de keywords. |
+| 📊 **GSC** | Estado de conexión, resúmenes, top queries, top páginas, tendencias, detalles por query. |
 | ⚔️ **Competitive** | Overview competitivo y análisis de keyword gap entre dominios. |
 | 📍 **Locations** | Países, idiomas, ubicaciones, lookups de ciudades, códigos de ubicación para research por mercado. |
+| 🔗 **Backlinks** *(Pro)* | Perfil, dominios referentes, anchors, histórico de backlinks. |
+| ✍️ **Content** *(Pro)* | Ideas, drafts, aprobaciones, scheduling, calendario de contenido, publicaciones, scoring de keywords. |
 
 El conjunto de herramientas en vivo evoluciona. Para la lista exacta y actualizada, ejecuta `tools/list` contra `https://mcp.vibeseo.dev/mcp`.
+
+## Planes y acceso
+
+Las herramientas llaman a proveedores de datos de pago y modelos de IA en tu nombre, así que necesitan una suscripción activa de VibeSEO — una prueba o un plan de pago. No hay nivel anónimo ni gratuito para siempre.
+
+| | Prueba | SEO Researcher | Pro |
+|---|---|---|---|
+| **Precio** | $0 hoy, tarjeta requerida | $9/mes | $39/mes |
+| Keywords, dominios, auditorías, GSC, competitivo, ubicaciones | ✅ | ✅ | ✅ |
+| Datos de backlinks | — | — | ✅ |
+| Flujo de contenido con IA (ideas, drafts, publicación) | — | — | ✅ |
+| Créditos mensuales | 40 | 400 | 1500 |
+
+La prueba requiere tarjeta, empieza en $0 y se puede cancelar en cualquier momento; funciona con los límites del nivel de investigación y se convierte al plan que elegiste cuando termina. Los créditos miden las llamadas que cuestan dinero (lookups de keywords, auditorías, generación con IA) — ver [vibeseo.dev/pricing](https://vibeseo.dev/pricing) para los planes actuales.
+
+**Nunca tienes que salir del chat para pagar.** Si llamas a una herramienta sin una suscripción activa, sin créditos, o en un plan que no la incluye, el resultado de la herramienta vuelve con un enlace de pago o de recarga en un clic para tu cuenta.
 
 ## Clientes soportados
 

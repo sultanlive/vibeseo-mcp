@@ -33,7 +33,7 @@ Client CLI (Claude Code, Gemini CLI, Codex CLI) e snippet manuali: vedi [Client 
 
 ## Avvio rapido
 
-1. Crea un account VibeSEO gratuito su [vibeseo.dev](https://vibeseo.dev).
+1. Crea un account VibeSEO su [vibeseo.dev](https://vibeseo.dev) e avvia una prova — $0 oggi, carta richiesta (vedi [Piani & accesso](#piani--accesso)).
 2. Apri la [pagina VibeSEO MCP](https://vibeseo.dev/mcp) e segui il link di setup per il tuo client.
 3. Usa l'installazione one-click, il comando CLI copiato o lo snippet JSON/TOML manuale.
 4. Autorizza con OAuth quando il client apre la schermata di consenso.
@@ -43,10 +43,10 @@ Client CLI (Claude Code, Gemini CLI, Codex CLI) e snippet manuali: vedi [Client 
 
 - **🔍 Ricerca di parole chiave** — volumi, CPC, difficoltà, intent, idee dall'autocomplete, parole chiave-domanda, confronti e termini correlati.
 - **🌐 Analisi di dominio** — panoramica del dominio, top keyword, top pagine, storico di traffico e suggerimenti di competitor.
-- **🔗 Backlink** — profilo, domini referenti, anchor text e storico di qualsiasi dominio.
 - **🛠️ Audit di sito** — avvia audit, leggi i risultati di crawl, lista i problemi e prioritizza i fix.
 - **📈 Performance GSC** — riassunti dalla Google Search Console collegata, top query, top pagine, trend e diagnostica a livello di query.
-- **🚀 Workflow di contenuto** — lista post, aggiorna idee, genera bozze, approva articoli pronti, programma e revisiona.
+- **🔗 Backlink** *(Pro)* — profilo, domini referenti, anchor text e storico di qualsiasi dominio.
+- **🚀 Workflow di contenuto** *(Pro)* — lista post, aggiorna idee, genera bozze, approva articoli pronti, programma e revisiona.
 
 ## Superficie di tool
 
@@ -54,17 +54,33 @@ Il server MCP rispecchia lo stesso workflow SEO interno a VibeSEO. Categorie:
 
 | Categoria | Cosa copre |
 |---|---|
-| 📁 **Projects** | Creare progetti, aggiornare le info del sito, gestire i competitor, tenere il contesto dell'account aggiornato. |
-| 🔍 **Keywords** | Metriche, batch, suggerimenti, autocomplete, domande, confronti, storico, cleanup. |
+| 📁 **Projects** | Elenca i progetti, leggi le info di progetto e sito, elenca e sostituisci i competitor tracciati. |
+| 🔍 **Keywords** | Metriche, autocomplete, keyword correlate, di domanda, con preposizioni e di confronto, storico di lookup. |
 | 🌐 **Domains** | Panoramica, top keyword, top pagine, storico di traffico, idee di competitor, storico di lookup. |
-| 🔗 **Backlinks** | Profilo, domini referenti, anchor, storico backlink. |
 | 🧯 **Audits** | Avviare audit di sito, leggere riassunti, listare problemi, ispezionare pagine crawlate. |
-| 📊 **GSC** | Proprietà collegate, stato, riassunti, top query, top pagine, trend, dettagli per query. |
-| ✍️ **Content** | Idee, bozze, approvazioni, scheduling, target di pubblicazione, pubblicazioni, scoring di keyword. |
+| 📊 **GSC** | Stato della connessione, riassunti, top query, top pagine, trend, dettagli per query. |
 | ⚔️ **Competitive** | Panoramica competitiva e analisi di keyword gap tra domini. |
 | 📍 **Locations** | Paesi, lingue, localizzazioni, lookup di città, codici di localizzazione per ricerca per mercato. |
+| 🔗 **Backlinks** *(Pro)* | Profilo, domini referenti, anchor, storico backlink. |
+| ✍️ **Content** *(Pro)* | Idee, bozze, approvazioni, scheduling, calendario dei contenuti, pubblicazioni, scoring di keyword. |
 
 L'insieme di tool live evolve. Per la lista esatta e aggiornata, esegui `tools/list` contro `https://mcp.vibeseo.dev/mcp`.
+
+## Piani & accesso
+
+I tool chiamano provider di dati a pagamento e modelli AI per tuo conto, quindi richiedono un abbonamento VibeSEO attivo — una prova o un piano a pagamento. Non esiste un livello anonimo o gratuito per sempre.
+
+| | Prova | SEO Researcher | Pro |
+|---|---|---|---|
+| **Prezzo** | $0 oggi, carta richiesta | $9/mese | $39/mese |
+| Keyword, domini, audit, GSC, competitive, localizzazioni | ✅ | ✅ | ✅ |
+| Dati sui backlink | — | — | ✅ |
+| Workflow di contenuto AI (idee, bozze, pubblicazione) | — | — | ✅ |
+| Crediti mensili | 40 | 400 | 1500 |
+
+La prova richiede la carta, parte da $0 ed è annullabile in qualsiasi momento; gira ai limiti del livello research e si converte nel piano scelto quando termina. I crediti misurano le chiamate che hanno un costo (lookup di keyword, audit, generazione AI) — vedi [vibeseo.dev/pricing](https://vibeseo.dev/pricing) per i piani attuali.
+
+**Non devi mai uscire dalla chat per pagare.** Se chiami un tool senza un abbonamento attivo, senza crediti, o su un piano che non lo include, il risultato del tool torna con un link di checkout one-click o di ricarica per il tuo account.
 
 ## Client supportati
 

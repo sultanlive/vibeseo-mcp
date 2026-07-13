@@ -97,6 +97,31 @@ Setup paths for each:
 
 Full per-client install instructions: [docs/setup.md](docs/setup.md).
 
+## Cursor plugin
+
+This repository is also a Cursor plugin. It contributes one MCP server (`vibeseo`) and no rules, skills, agents, or hooks.
+
+```
+.cursor-plugin/plugin.json   ← plugin manifest
+mcp.json                     ← the MCP server it contributes
+assets/logo.svg              ← plugin logo
+```
+
+`mcp.json` points Cursor at the hosted server:
+
+```json
+{
+  "mcpServers": {
+    "vibeseo": {
+      "type": "http",
+      "url": "https://mcp.vibeseo.dev/mcp"
+    }
+  }
+}
+```
+
+There is nothing to configure. No API key or environment variable is required: the server advertises OAuth 2.1 metadata, and Cursor registers itself dynamically and opens the consent screen on first use. Authorizing needs a VibeSEO account on a trial or paid plan — see [Plans & access](#plans--access).
+
 ## Example prompts
 
 **Keyword plan**

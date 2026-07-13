@@ -1,0 +1,25 @@
+{
+  "name": "vibeseo",
+  "displayName": "VibeSEO",
+  "description": "Live SEO data in Cursor: keyword research, SERP and competitor analysis, technical site audits, backlink profiles, Google Search Console performance, and content drafting and publishing — all in natural language.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Sultan Kadyrkesh"
+  },
+  "publisher": "vibeseo",
+  "homepage": "https://vibeseo.dev/mcp",
+  "repository": "https://github.com/sultanlive/vibeseo-mcp",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "category": "Data & Analytics",
+  "keywords": [
+    "seo",
+    "keyword-research",
+    "site-audit",
+    "backlinks",
+    "search-console",
+    "serp",
+    "content"
+  ],
+  "mcpServers": "mcp.json"
+}

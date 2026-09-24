@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "dev.vibeseo/vibeseo",
   "title": "VibeSEO",
-  "description": "SEO research, keyword discovery, domain analysis, site audits, Google Search Console, backlinks, and content workflow \u2014 all from your AI assistant. OAuth 2.1 remote MCP server.",
+  "description": "SEO research, keyword discovery, site audits, Search Console, backlinks and content workflow.",
   "websiteUrl": "https://vibeseo.dev/mcp",
   "version": "0.1.4",
   "repository": {

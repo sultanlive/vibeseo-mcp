@@ -2,6 +2,12 @@
 
 All notable changes to the VibeSEO MCP listing are recorded here. Versions match the records published to `registry.modelcontextprotocol.io`.
 
+## 0.1.4 — 2026-09-24
+
+- Add GitHub MCP Registry metadata under `_meta` (display name, tags, categories).
+- Shorten `description` to the registry's 100-character limit; the listing now names keyword discovery and Search Console explicitly.
+- Companion listing: the GEO server is published separately as `dev.vibeseo/geo` from [sultanlive/vibeseo-geo-mcp](https://github.com/sultanlive/vibeseo-geo-mcp).
+
 ## 0.1.3 — 2026-05-24
 
 - No functional change. Smoke test of the new CI workflow (`.github/workflows/publish-mcp.yml`) — first publish driven entirely by `git push --tags v0.1.3`.
